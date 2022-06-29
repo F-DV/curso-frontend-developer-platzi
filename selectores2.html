@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div p {
+            color: green;
+        }
+        div > div{
+            background: papayawhip;
+        }
+        div + section{
+            background: palevioletred;
+        }
+        div ~ p{
+            background: blueviolet;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <p>Selector</p>
+        <p>Desendientes</p>
+    
+    </div>
+    <div>
+        <p>Selector</p>
+        <div>Hijo directo</div>
+    </div>
+    <div>Selector</div>
+    <section>
+        Elemento Adyacente
+    </section>
+    <div>Selector:</div>
+    <p>General de hermanos</p>
+</body>
+</html>
