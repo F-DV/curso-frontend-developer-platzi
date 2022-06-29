@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores 3</title>
+    <style>
+        p{
+            color: blue;
+        }
+        p:hover{
+            color: aqua;
+        }
+        div p:nth-child(2){
+            color: aquamarine;
+        }
+        p::first-letter{
+            color: red;
+        }
+        p:hover::before{
+            content: "✨";
+        }
+        p::after{
+            content: "🩲";
+        }
+        ::placeholder{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <p>Hello</p>
+    <div>
+        <p>Ensayando</p>
+        <p>psudoElementos</p>
+        <p>y pseudoclases</p>
+    </div>
+    <input type="text" placeholder="name">
+</body>
+</html>
